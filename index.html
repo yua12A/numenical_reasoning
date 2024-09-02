@@ -18,6 +18,18 @@
         th {
             background-color: #00AC9A;
         }
+    button {
+      background-color: #009999; /* 青緑色 */
+      color: #000000;
+      padding: 8px 16px; /* パディングを小さく */
+  font-size: 14px; 
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      
+      margin: 0.1px;
+      cursor: pointer;
+    }
     </style>
 </head>
 <body>
@@ -57,7 +69,10 @@
             <!-- 過去のゲーム結果がここに表示されます -->
         </tbody>
     </table>
-
+    <strong>
+    <button onclick="jumpToWebsite1()">数当てゲーム1000</button>
+    <button onclick="jumpToWebsite2()">数当てゲーム10000</button>
+    </strong>
     <script>
         let correctNumber = Math.floor(Math.random() * 100) + 1;
         let attempts = 0;
@@ -121,6 +136,15 @@
             // 過去の結果テーブルを表示
             previousResultsTable.style.display = 'table';
         }
+        // ... (既存のJavaScriptコード)
+
+function jumpToWebsite1() {
+  window.location.href = "https://www.example.com"; // ウェブサイト1のURLに置き換えてください
+}
+
+function jumpToWebsite2() {
+  window.location.href = "https://another.example.com"; // ウェブサイト2のURLに置き換えてください
+}
     </script>
 </body>
 </html>
